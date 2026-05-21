@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedai Nyonya Rumah</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top bg-success">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#beranda">
+            Kedai Nyonya Rumah
+            </a>
+
+            <!-- Bagian Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link text-white" href="#beranda">Beranda</a>
+                    <a class="nav-link text-white" href="#tentangkami">Tentang</a>
+                    <a class="nav-link text-white" href="#menu">Daftar Menu</a>
+                    <a class="nav-link text-white" href="#kontak">Kontak</a>
+                    <a class="nav-link text-white" href="login.html">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="beranda" class="bg-dua">
+            <img class="header-img" src="assets/header.png" alt="Header">
+    </section>
+
+    <section id="tentangkami" class="bg-satu">
+        <div class="container">
+            <h2 class="text-center mb-4 pt-5">Tentang Kami</h2>
+            <h4 class="text-center">Kisah dibalik setiap hidangan</h4>
+
+            <div class="row align-item-center">
+                <!-- Untuk Logo -->
+                <div class="col-md-4 mb-5 mb-md-0">
+                    <img src="assets/logoo.png" class="logo-img" style="margin-top: -40px;">
+                </div>
+
+                <!-- Untuk Teksnya -->
+                <div class="col-md-8 mb-5">
+                    
+                    <p style="text-align:justify;">Nyonya Rumah merupakan representatif dari Ny. Julie Sutardjana sebagai pendiri dari usaha Kedai Nyonya Rumah yang telah mencintai dan menjadikan dunia kuliner sebagai hobi, sejak usia 10 tahun. Setelah melalui berbagai proses yang cukup panjang dengan usaha dan kegigihannya, Ny. Julie berhasil mendirikan bisnis kuliner Kedai Nyonya Rumah pada tahun 1999 dan terus berkembang serta berinovasi hingga sekarang.
+Selain resto dan bar, Kedai Nyonya Rumah juga memiliki cake shop, dimana terdapat berbagai variant bakery yang lezat dan unik. Kedai Nyonya Rumah yang telah beroperasional selama lebih dari 20 tahun, dan menjadi salah satu destinasi kuliner favorite yang melegenda serta mempunyai banyak prestasi di Kota Bandung. Tidak hanya sukses di dunia kuliner, Ny. Julie juga membuat berbagai buku resep dan aktif menulis di berbagai media.
+</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="py-5 bg-light flex-grow-1">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <!-- Menu 1 -->
+            <div class="col-md-3">
+
+                <div class="card h-100 shadow border-0">
+
+                    <img src="assets/Nasi-Campur-Bali.jpg" class="card-img-top">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title fw-bold">
+                            Nasi Campur Bali
+                        </h5>
+
+                        <p class="card-text text-secondary">
+                            Makanan khas Bali yang isinya nasi putih dengan berbagai lauk dalam satu piring
+                        </p>
+
+                        <h4 class="text-success">
+                            Rp 65.000
+                        </h4>
+
+                        <button class="btn btn-success w-100"
+                        onclick="pesan('nasi campur bali',65000)">
+                            Pesan
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Menu 2 -->
+            <div class="col-md-3">
+
+                <div class="card h-100 shadow border-0">
+
+                    <img src="assets/Nasi-Goreng.jpg" class="card-img-top">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title fw-bold">
+                            Nasi Goreng
+                        </h5>
+
+                        <p class="card-text text-secondary">
+                            Nasi goreng khas dengan kecap manis, telur, ayam suwir, dan kerupuk renyah.
+                        </p>
+
+                        <h4 class="text-success">
+                            Rp 40.000
+                        </h4>
+
+                        <button class="btn btn-success w-100"
+                        onclick="pesan('nasi goreng',40000)">
+                            Pesan
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Menu 3 -->
+            <div class="col-md-3">
+
+                <div class="card h-100 shadow border-0">
+
+                    <img src="assets/nasi-sei-sapi.png" class="card-img-top">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title fw-bold">
+                            Nasi Sei Sapi
+                        </h5>
+
+                        <p class="card-text text-secondary">
+                            Hidangan khas NTT yang dagingnya diasapi sampai punya aroma smoky yang khas.
+                        </p>
+
+                        <h4 class="text-success">
+                            Rp 55.000
+                        </h4>
+
+                        <button class="btn btn-success w-100"
+                        onclick="pesan('nasi sei sapi',55000)">
+                            Pesan
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Menu 4 -->
+            <div class="col-md-3">
+
+                <div class="card h-100 shadow border-0">
+
+                    <img src="assets/Nasi-Tongseng-Kambing.jpg" class="card-img-top">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title fw-bold">
+                            Nasi Tongseng Kambing
+                        </h5>
+
+                        <p class="card-text text-secondary">
+                            Hidangan nasi dengan potongan daging kambing empuk dengan kuah gurih.
+                        </p>
+
+                        <h4 class="text-success">
+                            Rp 42.000
+                        </h4>
+
+                        <button class="btn btn-success w-100"
+                        onclick="pesan('nasi tongseng kambing',42000)">
+                            Pesan
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="bg-success text-white py-4">
+    <div class="container text-center">
+        <p class="mb-1">&copy; Kedai Nyonya Rumah</p>
+        <p class="mb-0">Semua Hak Dilindungi</p>
+    </div>
+</footer>
+
+<script src="js/index.js"></script>
+
+</script>
+</body>
+</html>

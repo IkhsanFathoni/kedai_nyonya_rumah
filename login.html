@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top bg-success">
+    <div class="container">
+        <a class="navbar-brand text-white" href="#beranda">
+        Kedai Nyonya Rumah
+        </a>
+
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link text-white" href="index.html">Beranda</a>
+                <a class="nav-link text-white" href="index.html#tentangkami">Tentang Kami</a>
+                <a class="nav-link text-white" href="index.html#menu">Daftar Menu</a>
+                <a class="nav-link text-white" href="index.html#kontak">Kontak</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Formulir Login -->
+<section class="d-flex justify-content-center align-items-center min-vh-100 bg-light">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-10">
+
+                <div class="row rounded overflow-hidden shadow">
+
+                    <!-- LOGIN -->
+                    <div class="col-md-6 bg-light-subtle p-5">
+
+                        <h1 class="fw-bold mb-5">
+                            LOGIN
+                        </h1>
+
+                        <form onsubmit="login(event)">
+
+                            <div class="mb-4">
+                                <label class="form-label">
+                                    Email
+                                </label>
+
+                                <input 
+                                type="text"
+                                id="email"
+                                class="form-control"
+                                >
+                            </div>
+
+                            <div class="mb-5">
+                                <label class="form-label">
+                                    Password
+                                </label>
+
+                                <input 
+                                type="password"
+                                id="password"
+                                class="form-control"
+                                >
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary px-5">
+                                    Login
+                                </button>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                    <!-- KANAN -->
+                    <div class="col-md-6 bg-success text-white p-5 d-flex flex-column justify-content-center">
+
+                        <h4 class="mb-4">
+                            Selamat Datang Kembali
+                        </h4>
+
+                        <h1 class="fw-bold mb-4">
+                            MASUK KEDAI NYONYA
+                        </h1>
+
+                        <p class="fs-5">
+                            Login untuk memesan hidangan favorit anda
+                        </p>
+
+                        <p class="mt-5">
+                            Belum punya akun?
+                            <a href="register.html" class="text-blue fw-bold">
+                                Daftar sekarang
+                            </a>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="bg-success text-white py-3 text-center">
+    <p class="mb-1">&copy;Kedai Nyonya Rumah</p>
+    <p class="mb-0">Semua Hak Dilindungi</p>
+</footer>
+
+
+<!-- JAVASCRIPT LOGIN -->
+<script src="js/login.js"></script>
+
+</body>
+</html>
